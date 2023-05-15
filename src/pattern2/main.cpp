@@ -1,5 +1,5 @@
 
-#include "policy.h"
+#include "abstractpolicy.h"
 #include "context.h"
 #include <iostream>
 
@@ -10,9 +10,9 @@ int main(int argc, char* argv[])
   Context* contextReserved = Context::createReservedSeatAvailable();
   Context* contextUnreserved = Context::createReservedSeatUnavailable();
 
-  Policy* policyReserved = Policy::preferReservedSeat();
-  Policy* policyNecessary = Policy::necessaryReservedSeat();
-  Policy* policyUnreserved = Policy::preferUnreservedSeat();
+  AbstractPolicy* policyReserved = AbstractPolicy::preferReservedSeat();
+  AbstractPolicy* policyNecessary = AbstractPolicy::necessaryReservedSeat();
+  AbstractPolicy* policyUnreserved = AbstractPolicy::preferUnreservedSeat();
 
   std::cout << policyReserved->buy(contextReserved) << std::endl;
   std::cout << policyReserved->buy(contextUnreserved) << std::endl;
