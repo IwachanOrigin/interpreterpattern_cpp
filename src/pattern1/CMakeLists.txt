@@ -1,4 +1,6 @@
 
+project(pattern1 CXX)
+
 set(MAIN_SRC
   context.h
   main.cpp
