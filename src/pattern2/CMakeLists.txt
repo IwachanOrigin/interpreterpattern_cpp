@@ -2,8 +2,8 @@
 project(pattern2 CXX)
 
 set(MAIN_SRC
-  abstractpolisy.h
-  abstractpolisy.cpp
+  abstractpolicy.h
+  abstractpolicy.cpp
   context.h
   main.cpp
   necessaryreservedseatpolicy.h
